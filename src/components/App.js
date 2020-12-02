@@ -26,7 +26,7 @@ const App = (props) => {
             (
               // TODO -- get from API and figure out images
               // Probs make a common component for a donut
-              <Grid key={index} container justify="center" item xs={3}>
+              <Grid key={index} direction="column" alignItems="center" container justify="center" item xs={3} wrap="wrap">
                 <img src={donutImage} alt={donut.Name} />
                 {donut.Name}
               </Grid>
