@@ -12,7 +12,6 @@ const App = (props) => {
   useEffect(() => {
     setLoading(true);
     axios.get("https://2mqovj2zbg.execute-api.us-east-1.amazonaws.com/Prod").then((res) => {
-      console.log(res.data)
       setDonuts(res.data)
       setLoading(false)
     })
